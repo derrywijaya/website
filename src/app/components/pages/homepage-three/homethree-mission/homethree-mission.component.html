@@ -1,0 +1,41 @@
+<section class="our-mission-area ptb-100">
+    <div class="container">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <!-- <div class="col-lg-4 col-md-12">
+                <div class="our-mission-content">
+                    <div class="content" *ngFor="let Content of ourMissionContent;">
+                        <h2>{{Content.title}}</h2>
+                        <p>{{Content.paragraphText1}}</p>
+                        <ul class="features-list">
+                            <li *ngFor="let List of featuresList;"><i class="{{List.icon}}"></i> {{List.title}}</li>
+                        </ul>
+                        <p>{{Content.paragraphText2}}</p>
+                        <a routerLink="/{{Content.defaultBtnLink}}" class="default-btn"><i class="{{Content.defaultBtnIcon}}"></i>{{Content.defaultBtnText}}<span></span></a>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="col-lg-12 col-md-12">
+                <div class="our-mission-content">
+                    <div class="content" *ngFor="let Content of selectedPublication;">
+                        <h2>{{Content.title}}</h2>
+                        <p>{{Content.paragraphText1}}</p>
+                        <ul class="features-list">
+                            <li *ngFor="let pub of pubList;"><i class="{{pub.icon}}"></i> <a href="assets/publications/{{pub.link}}" target="_blank">{{pub.title}}</a>
+                            <p>{{pub.text}} 
+                            
+                            
+                            </li>
+                        </ul>
+                        <p>For complete list please visit my google scholar page </p>
+                        <br/>   
+                        <a href="https://scholar.google.com/citations?user=8lmWWD0AAAAJ&hl=en" target="_blank" class="default-btn"><i class="{{Content.defaultBtnIcon}}"></i>Google Scholar<span></span></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section> 
